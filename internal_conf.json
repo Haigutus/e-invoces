@@ -1,0 +1,2234 @@
+{
+    "CREDITTRANSFER": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "CREDITTRANSFER"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentAccountIdentifier}",
+                "element": "PaymentAccountIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "M",
+                    "description": "A unique identifier of the financial account, at a financial institution, to which payment should be made."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentAccountName}",
+                "element": "PaymentAccountName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The name of the payment account, at a payment serive providerfinancial institution, to which payment should be made."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentServiceProviderIdentifier}",
+                "element": "PaymentServiceProviderIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier for the payment service provider where a payment account is located."
+                }
+            }
+        }
+    },
+    "INVOICELINEPERIOD": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICELINEPERIOD"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLinePeriodStartDate}",
+                "element": "InvoiceLinePeriodStartDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the Invoice period for this Invoice line starts."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLinePeriodEndDate}",
+                "element": "InvoiceLinePeriodEndDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the Invoice period for this Invoice line ends."
+                }
+            }
+        }
+    },
+    "VATBREAKDOWN": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "VATBREAKDOWN"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATCategoryTaxableAmount}",
+                "element": "VATCategoryTaxableAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "Sum of all taxable amounts subject to a specific VAT category code and VAT category rate (if the VAT category rate is applicable)."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATCategoryTaxAmount}",
+                "element": "VATCategoryTaxAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The total VAT amount for a given VAT category."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATCategoryCode}",
+                "element": "VATCategoryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "Coded identification of a VAT category."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATCategoryRate}",
+                "element": "VATCategoryRate",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The VAT rate, represented as percentage that applies for the relevant VAT category."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATExemptionReasonText}",
+                "element": "VATExemptionReasonText",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual statement of the reason why the amount is exempted from VAT or why no VAT is being charged"
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATExemptionReasonCode}",
+                "element": "VATExemptionReasonCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "A coded statement of the reason for why the amount is exempted from VAT."
+                }
+            }
+        }
+    },
+    "SELLERPOSTALADDRESS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "SELLERPOSTALADDRESS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerAddressLine1}",
+                "element": "SellerAddressLine1",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The main address line in an address."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerAddressLine2}",
+                "element": "SellerAddressLine2",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerAddressLine3}",
+                "element": "SellerAddressLine3",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerCity}",
+                "element": "SellerCity",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The common name of the city, town or village, where the Seller address is located."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerPostCode}",
+                "element": "SellerPostCode",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The identifier for an addressable group of properties according to the relevant postal service."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerCountrySubdivision}",
+                "element": "SellerCountrySubdivision",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The subdivision of a country."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerCountryCode}",
+                "element": "SellerCountryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A code that identifies the country."
+                }
+            }
+        }
+    },
+    "ITEMINFORMATION": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "ITEMINFORMATION"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemName}",
+                "element": "ItemName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "A name for an item."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemDescription}",
+                "element": "ItemDescription",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A description for an item."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemSellersIdentifier}",
+                "element": "ItemSellersIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier, assigned by the Seller, for the item."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemBuyersIdentifier}",
+                "element": "ItemBuyersIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier, assigned by the Buyer, for the item."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemStandardIdentifier}",
+                "element": "ItemStandardIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An item identifier based on a registered scheme."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemClassificationIdentifier}",
+                "element": "ItemClassificationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "A code for classifying the item by its type or nature."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemCountryOfOrigin}",
+                "element": "ItemCountryOfOrigin",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The code identifying the country from which the item originates."
+                }
+            }
+        }
+    },
+    "DIRECTDEBIT": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DIRECTDEBIT"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{MandateReferenceIdentifier}",
+                "element": "MandateReferenceIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "Unique identifier assigned by the Payee for referencing the direct debit mandate."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BankAssignedCreditorIdentifier}",
+                "element": "BankAssignedCreditorIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DebitedAccountIdentifier}",
+                "element": "DebitedAccountIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "The account a direct debit is debited."
+                }
+            }
+        }
+    },
+    "PAYEE": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PAYEE"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PayeeName}",
+                "element": "PayeeName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The name of the Payee."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PayeeIdentifier}",
+                "element": "PayeeIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier for the Payee."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PayeeLegalRegistrationIdentifier}",
+                "element": "PayeeLegalRegistrationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier issued by an official registrar that identifies the Payee as a legal entity or person."
+                }
+            }
+        }
+    },
+    "PAYMENTCARDINFORMATION": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PAYMENTCARDINFORMATION"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentCardPrimaryAccountNumber}",
+                "element": "PaymentCardPrimaryAccountNumber",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The Primary Account Number (PAN) of the card used for payment."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentCardHolderName}",
+                "element": "PaymentCardHolderName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The name of the payment card holder."
+                }
+            }
+        }
+    },
+    "PAYMENTINSTRUCTIONS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PAYMENTINSTRUCTIONS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentMeansTypeCode}",
+                "element": "PaymentMeansTypeCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "The means, expressed as code, for how a payment is expected to be or has been settled."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentMeansText}",
+                "element": "PaymentMeansText",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The means, expressed as text, for how a payment is expected to be or has been settled."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{RemittanceInformation}",
+                "element": "RemittanceInformation",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual value used to establish a link between the payment and the Invoice, issued by the Seller."
+                }
+            }
+        }
+    },
+    "ITEMATTRIBUTES": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "ITEMATTRIBUTES"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemAttributeName}",
+                "element": "ItemAttributeName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The name of the attribute or property of the item."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemAttributeValue}",
+                "element": "ItemAttributeValue",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The value of the attribute or property of the item."
+                }
+            }
+        }
+    },
+    "SELLER": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "SELLER"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerName}",
+                "element": "SellerName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The full formal name by which the Seller is registered in the national registry of legal entities or as a Taxable person or otherwise trades as a person or persons."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerTradingName}",
+                "element": "SellerTradingName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A name by which the Seller is known, other than Seller name (also known as Business name)."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerIdentifier}",
+                "element": "SellerIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "A finite sequence of characters."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerLegalRegistrationIdentifier}",
+                "element": "SellerLegalRegistrationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier issued by an official registrar that identifies the Seller as a legal entity or person."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerVATIdentifier}",
+                "element": "SellerVATIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "The Seller's VAT identifier (also known as Seller VAT identification number)."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerTaxRegistrationIdentifier}",
+                "element": "SellerTaxRegistrationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "The local identification (defined by the Seller\u2019s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerAdditionalLegalInformation}",
+                "element": "SellerAdditionalLegalInformation",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "Additional legal information relevant for the Seller."
+                }
+            }
+        },
+        "8": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerElectronicAddress}",
+                "element": "SellerElectronicAddress",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "Identifies the Seller's electronic address to which a business document may be delivered."
+                }
+            }
+        }
+    },
+    "INVOICINGPERIOD": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICINGPERIOD"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicingPeriodStartDate}",
+                "element": "InvoicingPeriodStartDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the Invoice period starts."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicingPeriodEndDate}",
+                "element": "InvoicingPeriodEndDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the Invoice period ends."
+                }
+            }
+        }
+    },
+    "ADDITIONALSUPPORTINGDOCUMENTS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "ADDITIONALSUPPORTINGDOCUMENTS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SupportingDocumentReference}",
+                "element": "SupportingDocumentReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "M",
+                    "description": "An identifier of the supporting document."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SupportingDocumentDescription}",
+                "element": "SupportingDocumentDescription",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A description of the supporting document."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ExternalDocumentLocation}",
+                "element": "ExternalDocumentLocation",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The URL (Uniform Resource Locator) that identifies where the external document is located."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{AttachedDocument}",
+                "element": "AttachedDocument",
+                "attributes": {
+                    "type": "EN16931_BinaryObject.Type",
+                    "usage": "O",
+                    "description": "An attached document embedded as binary object or sent together with the invoice."
+                }
+            }
+        }
+    },
+    "INVOICENOTE": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICENOTE"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceNoteSubjectCode}",
+                "element": "InvoiceNoteSubjectCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The subject of the textual note in BT-22."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceNote}",
+                "element": "InvoiceNote",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "A textual note that gives unstructured information that is relevant to the Invoice as a whole."
+                }
+            }
+        }
+    },
+    "BUYERCONTACT": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "BUYERCONTACT"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerContactPoint}",
+                "element": "BuyerContactPoint",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A contact point for a legal entity or person."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerContactTelephoneNumber}",
+                "element": "BuyerContactTelephoneNumber",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A phone number for the contact point."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerContactEmailAddress}",
+                "element": "BuyerContactEmailAddress",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An e-mail address for the contact point."
+                }
+            }
+        }
+    },
+    "INVOICELINECHARGES": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICELINECHARGES"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{nvoiceLineChargeAmount}",
+                "element": "nvoiceLineChargeAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The amount of a charge, without VAT."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineChargeBaseAmount}",
+                "element": "InvoiceLineChargeBaseAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The base amount that may be used, in conjunction with the Invoice line charge percentage, to calculate the Invoice line charge amount."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineChargePercentage}",
+                "element": "InvoiceLineChargePercentage",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The percentage that may be used, in conjunction with the Invoice line charge base amount, to calculate the Invoice line charge amount."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineChargeReason}",
+                "element": "InvoiceLineChargeReason",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The reason for the Invoice line charge, expressed as text."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineChargeReasonCode}",
+                "element": "InvoiceLineChargeReasonCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The reason for the Invoice line charge, expressed as a code."
+                }
+            }
+        }
+    },
+    "PROCESSCONTROL": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PROCESSCONTROL"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BusinessProcessType}",
+                "element": "BusinessProcessType",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SpecificationIdentifier}",
+                "element": "SpecificationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "M",
+                    "description": "An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms."
+                }
+            }
+        }
+    },
+    "DOCUMENTLEVELCHARGES": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DOCUMENTLEVELCHARGES"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeAmount}",
+                "element": "DocumentLevelChargeAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The amount of a charge, without VAT."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeBaseAmount}",
+                "element": "DocumentLevelChargeBaseAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The base amount that may be used, in conjunction with the document level charge percentage, to calculate the document level charge amount."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargePercentage}",
+                "element": "DocumentLevelChargePercentage",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The percentage that may be used, in conjunction with the document level charge base amount, to calculate the document level charge amount."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeVATCategoryCode}",
+                "element": "DocumentLevelChargeVATCategoryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A coded identification of what VAT category applies to the document level charge."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeVATRate}",
+                "element": "DocumentLevelChargeVATRate",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The VAT rate, represented as percentage that applies to the document level charge."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeReason}",
+                "element": "DocumentLevelChargeReason",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The reason for the document level charge, expressed as text."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelChargeReasonCode}",
+                "element": "DocumentLevelChargeReasonCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The reason for the document level charge, expressed as a code."
+                }
+            }
+        }
+    },
+    "PRICEDETAILS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PRICEDETAILS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemNetPrice}",
+                "element": "ItemNetPrice",
+                "attributes": {
+                    "type": "EN16931_UnitPrice_Amount.Type",
+                    "usage": "M",
+                    "description": "The price of an item, exclusive of VAT, after subtracting item price discount."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemPriceDiscount}",
+                "element": "ItemPriceDiscount",
+                "attributes": {
+                    "type": "EN16931_UnitPrice_Amount.Type",
+                    "usage": "O",
+                    "description": "The total discount subtracted from the Item gross price to calculate the Item net price."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemGrossPrice}",
+                "element": "ItemGrossPrice",
+                "attributes": {
+                    "type": "EN16931_UnitPrice_Amount.Type",
+                    "usage": "O",
+                    "description": "The unit price, exclusive of VAT, before subtracting Item price discount."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemPriceBaseQuantity}",
+                "element": "ItemPriceBaseQuantity",
+                "attributes": {
+                    "type": "EN16931_Quantity.Type",
+                    "usage": "O",
+                    "description": "The number of item units to which the price applies."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ItemPriceBaseQuantityUnitOfMeasureCode}",
+                "element": "ItemPriceBaseQuantityUnitOfMeasureCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The unit of measure that applies to the Item price base quantity."
+                }
+            }
+        }
+    },
+    "root": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "root"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceNumber}",
+                "element": "InvoiceNumber",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "M",
+                    "description": "A unique identification of the Invoice."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceIssueDate}",
+                "element": "InvoiceIssueDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "M",
+                    "description": "The date when the Invoice was issued."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceTypeCode}",
+                "element": "InvoiceTypeCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A code specifying the functional type of the Invoice."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceCurrencyCode}",
+                "element": "InvoiceCurrencyCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "The currency in which all Invoice amounts are given, except for the Total VAT amount in accounting currency."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{VATAccountingCurrencyCode}",
+                "element": "VATAccountingCurrencyCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The currency used for VAT accounting and reporting purposes as accepted or required in the country of the Seller."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ValueAddedTaxPointDate}",
+                "element": "ValueAddedTaxPointDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the VAT becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the VAT directive."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ValueAddedTaxPointDateCode}",
+                "element": "ValueAddedTaxPointDateCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The code of the date when the VAT becomes accountable for the Seller and for the Buyer."
+                }
+            }
+        },
+        "8": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentDueDate}",
+                "element": "PaymentDueDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the payment is due."
+                }
+            }
+        },
+        "9": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerReference}",
+                "element": "BuyerReference",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An identifier assigned by the Buyer used for internal routing purposes."
+                }
+            }
+        },
+        "10": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ProjectReference}",
+                "element": "ProjectReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "The identification of the project the invoice refers to."
+                }
+            }
+        },
+        "11": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ContractReference}",
+                "element": "ContractReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "The identification of a contract."
+                }
+            }
+        },
+        "12": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PurchaseOrderReference}",
+                "element": "PurchaseOrderReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "An identifier of a referenced purchase order, issued by the Buyer."
+                }
+            }
+        },
+        "13": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SalesOrderReference}",
+                "element": "SalesOrderReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "An identifier of a referenced sales order, issued by the Seller."
+                }
+            }
+        },
+        "14": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ReceivingAdviceReference}",
+                "element": "ReceivingAdviceReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "An identifier of a referenced receiving advice."
+                }
+            }
+        },
+        "15": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DespatchAdviceReference}",
+                "element": "DespatchAdviceReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "An identifier of a referenced despatch advice."
+                }
+            }
+        },
+        "16": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TenderOrLotReference}",
+                "element": "TenderOrLotReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "The identification of the call for tender or lot the invoice relates to."
+                }
+            }
+        },
+        "17": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicedObjectIdentifier}",
+                "element": "InvoicedObjectIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier for an object on which the invoice is based, given by the Seller."
+                }
+            }
+        },
+        "18": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerAccountingReference}",
+                "element": "BuyerAccountingReference",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual value that specifies where to book the relevant data into the Buyer's financial accounts."
+                }
+            }
+        },
+        "19": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaymentTerms}",
+                "element": "PaymentTerms",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties)."
+                }
+            }
+        }
+    },
+    "LINEVATINFORMATION": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "LINEVATINFORMATION"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicedItemVATCategoryCode}",
+                "element": "InvoicedItemVATCategoryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "The VAT category code for the invoiced item."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicedItemVATRate}",
+                "element": "InvoicedItemVATRate",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The VAT rate, represented as percentage that applies to the invoiced item."
+                }
+            }
+        }
+    },
+    "INVOICELINE": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICELINE"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineIdentifier}",
+                "element": "InvoiceLineIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "M",
+                    "description": "A unique identifier for the individual line within the Invoice."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineNote}",
+                "element": "InvoiceLineNote",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual note that gives unstructured information that is relevant to the Invoice line."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineObjectIdentifier}",
+                "element": "InvoiceLineObjectIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier for an object on which the invoice line is based, given by the Seller."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicedQuantity}",
+                "element": "InvoicedQuantity",
+                "attributes": {
+                    "type": "EN16931_Quantity.Type",
+                    "usage": "M",
+                    "description": "The quantity of items (goods or services) that is charged in the Invoice line."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoicedQuantityUnitOfMeasure}",
+                "element": "InvoicedQuantityUnitOfMeasure",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "The unit of measure that applies to the invoiced quantity."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineNetAmount}",
+                "element": "InvoiceLineNetAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The total amount of the Invoice line."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ReferencedPurchaseOrderLineReference}",
+                "element": "ReferencedPurchaseOrderLineReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "O",
+                    "description": "An identifier for a referenced line within a purchase order, issued by the Buyer."
+                }
+            }
+        },
+        "8": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineBuyerAccountingReference}",
+                "element": "InvoiceLineBuyerAccountingReference",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A textual value that specifies where to book the relevant data into the Buyer's financial accounts."
+                }
+            }
+        }
+    },
+    "BUYER": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "BUYER"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerName}",
+                "element": "BuyerName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The full name of the Buyer."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerTradingName}",
+                "element": "BuyerTradingName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A name by which the Buyer is known, other than Buyer name (also known as Business name)."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerIdentifier}",
+                "element": "BuyerIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier of the Buyer."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerLegalRegistrationIdentifier}",
+                "element": "BuyerLegalRegistrationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier issued by an official registrar that identifies the Buyer as a legal entity or person."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerVATIdentifier}",
+                "element": "BuyerVATIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "The Buyer's VAT identifier (also known as Buyer VAT identification number)."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerElectronicAddress}",
+                "element": "BuyerElectronicAddress",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "Identifies the Buyer's electronic address to which a business document should be delivered."
+                }
+            }
+        }
+    },
+    "SELLERTAXREPRESENTATIVEPARTY": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "SELLERTAXREPRESENTATIVEPARTY"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerTaxRepresentativeName}",
+                "element": "SellerTaxRepresentativeName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "M",
+                    "description": "The full name of the Seller's tax representative party."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerTaxRepresentativeVATIdentifier}",
+                "element": "SellerTaxRepresentativeVATIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "M",
+                    "description": "The VAT identifier of the Seller's tax representative party."
+                }
+            }
+        }
+    },
+    "SELLERCONTACT": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "SELLERCONTACT"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerContactPoint}",
+                "element": "SellerContactPoint",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A contact point for a legal entity or person."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerContactTelephoneNumber}",
+                "element": "SellerContactTelephoneNumber",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "A phone number for the contact point."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SellerContactEmailAddress}",
+                "element": "SellerContactEmailAddress",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An e-mail address for the contact point."
+                }
+            }
+        }
+    },
+    "INVOICELINEALLOWANCES": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "INVOICELINEALLOWANCES"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineAllowanceAmount}",
+                "element": "InvoiceLineAllowanceAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The amount of an allowance, without VAT."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineAllowanceBaseAmount}",
+                "element": "InvoiceLineAllowanceBaseAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The base amount that may be used, in conjunction with the Invoice line allowance percentage, to calculate the Invoice line allowance amount."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineAllowancePercentage}",
+                "element": "InvoiceLineAllowancePercentage",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The percentage that may be used, in conjunction with the Invoice line allowance base amount, to calculate the Invoice line allowance amount."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineAllowanceReason}",
+                "element": "InvoiceLineAllowanceReason",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The reason for the Invoice line allowance, expressed as text."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceLineAllowanceReasonCode}",
+                "element": "InvoiceLineAllowanceReasonCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The reason for the Invoice line allowance, expressed as a code."
+                }
+            }
+        }
+    },
+    "DELIVERTOADDRESS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DELIVERTOADDRESS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToAddressLine1}",
+                "element": "DeliverToAddressLine1",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The main address line in an address."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToAddressLine2}",
+                "element": "DeliverToAddressLine2",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToAddressLine3}",
+                "element": "DeliverToAddressLine3",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToCity}",
+                "element": "DeliverToCity",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The common name of the city, town or village, where the DeliverTo address is located."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToPostCode}",
+                "element": "DeliverToPostCode",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The identifier for an addressable group of properties according to the relevant postal service."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToCountrySubdivision}",
+                "element": "DeliverToCountrySubdivision",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The subdivision of a country."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToCountryCode}",
+                "element": "DeliverToCountryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A code that identifies the country."
+                }
+            }
+        }
+    },
+    "DELIVERYINFORMATION": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DELIVERYINFORMATION"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToPartyName}",
+                "element": "DeliverToPartyName",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The name of the party to which the goods and services are delivered."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DeliverToLocationIdentifier}",
+                "element": "DeliverToLocationIdentifier",
+                "attributes": {
+                    "type": "EN16931_Identifier.Type",
+                    "usage": "O",
+                    "description": "An identifier for the location at which the goods and services are delivered."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{ActualDeliveryDate}",
+                "element": "ActualDeliveryDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "the date on which the supply of goods or services was made or completed."
+                }
+            }
+        }
+    },
+    "BUYERPOSTALADDRESS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "BUYERPOSTALADDRESS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerAddressLine1}",
+                "element": "BuyerAddressLine1",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The main address line in an address."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerAddressLine2}",
+                "element": "BuyerAddressLine2",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerAddressLine3}",
+                "element": "BuyerAddressLine3",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerCity}",
+                "element": "BuyerCity",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The common name of the city, town or village, where the Buyer address is located."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerPostCode}",
+                "element": "BuyerPostCode",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The identifier for an addressable group of properties according to the relevant postal service."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerCountrySubdivision}",
+                "element": "BuyerCountrySubdivision",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The subdivision of a country."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{BuyerCountryCode}",
+                "element": "BuyerCountryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A code that identifies the country."
+                }
+            }
+        }
+    },
+    "PRECEDINGINVOICEREFERENCE": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "PRECEDINGINVOICEREFERENCE"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PrecedingInvoiceReference}",
+                "element": "PrecedingInvoiceReference",
+                "attributes": {
+                    "type": "EN16931_DocumentReference.Type",
+                    "usage": "M",
+                    "description": "The identification of an Invoice that was previously sent by the Seller."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PrecedingInvoiceIssueDate}",
+                "element": "PrecedingInvoiceIssueDate",
+                "attributes": {
+                    "type": "EN16931_Date.Type",
+                    "usage": "O",
+                    "description": "The date when the Preceding Invoice was issued."
+                }
+            }
+        }
+    },
+    "SELLERTAXREPRESENTATIVEPOSTALADDRESS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "SELLERTAXREPRESENTATIVEPOSTALADDRESS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeAddressLine1}",
+                "element": "TaxRepresentativeAddressLine1",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The main address line in an address."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeAddressLine2}",
+                "element": "TaxRepresentativeAddressLine2",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeAddressLine3}",
+                "element": "TaxRepresentativeAddressLine3",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "An additional address line in an address that can be used to give further details supplementing the main line."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeCity}",
+                "element": "TaxRepresentativeCity",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The common name of the city, town or village, where the TaxRepresentative address is located."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativePostCode}",
+                "element": "TaxRepresentativePostCode",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The identifier for an addressable group of properties according to the relevant postal service."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeCountrySubdivision}",
+                "element": "TaxRepresentativeCountrySubdivision",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The subdivision of a country."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{TaxRepresentativeCountryCode}",
+                "element": "TaxRepresentativeCountryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A code that identifies the country."
+                }
+            }
+        }
+    },
+    "DOCUMENTTOTALS": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DOCUMENTTOTALS"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SumOfInvoiceLineNetAmount}",
+                "element": "SumOfInvoiceLineNetAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "Sum of all Invoice line net amounts in the Invoice."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SumOfAllowancesOnDocumentLevel}",
+                "element": "SumOfAllowancesOnDocumentLevel",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "Sum of all allowances on document level in the Invoice."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{SumOfChargesOnDocumentLevel}",
+                "element": "SumOfChargesOnDocumentLevel",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "Sum of all charges on document level in the Invoice."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceTotalAmountWithoutVAT}",
+                "element": "InvoiceTotalAmountWithoutVAT",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The total amount of the Invoice without VAT."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceTotalVATAmount}",
+                "element": "InvoiceTotalVATAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The total VAT amount for the Invoice."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceTotalVATAmountInAccountingCurrency}",
+                "element": "InvoiceTotalVATAmountInAccountingCurrency",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The VAT total amount expressed in the accounting currency accepted or required in the country of the Seller."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{InvoiceTotalAmountWithVAT}",
+                "element": "InvoiceTotalAmountWithVAT",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The total amount of the Invoice with VAT."
+                }
+            }
+        },
+        "8": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{PaidAmount}",
+                "element": "PaidAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The sum of amounts which have been paid in advance."
+                }
+            }
+        },
+        "9": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{RoundingAmount}",
+                "element": "RoundingAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The amount to be added to the invoice total to round the amount to be paid."
+                }
+            }
+        },
+        "10": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{AmountDueForPayment}",
+                "element": "AmountDueForPayment",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The outstanding amount that is requested to be paid."
+                }
+            }
+        }
+    },
+    "DOCUMENTLEVELALLOWANCES": {
+        "0": {
+            "PARENT": "",
+            "DATA": {
+                "element": "DOCUMENTLEVELALLOWANCES"
+            }
+        },
+        "1": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceAmount}",
+                "element": "DocumentLevelAllowanceAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "M",
+                    "description": "The amount of an allowance, without VAT."
+                }
+            }
+        },
+        "2": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceBaseAmount}",
+                "element": "DocumentLevelAllowanceBaseAmount",
+                "attributes": {
+                    "type": "EN16931_Amount.Type",
+                    "usage": "O",
+                    "description": "The base amount that may be used, in conjunction with the document level allowance percentage, to calculate the document level allowance amount."
+                }
+            }
+        },
+        "3": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowancePercentage}",
+                "element": "DocumentLevelAllowancePercentage",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance amount."
+                }
+            }
+        },
+        "4": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceVATCategoryCode}",
+                "element": "DocumentLevelAllowanceVATCategoryCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "M",
+                    "description": "A coded identification of what VAT category applies to the document level allowance."
+                }
+            }
+        },
+        "5": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceVATRate}",
+                "element": "DocumentLevelAllowanceVATRate",
+                "attributes": {
+                    "type": "EN16931_Percentage.Type",
+                    "usage": "O",
+                    "description": "The VAT rate, represented as percentage that applies to the document level allowance."
+                }
+            }
+        },
+        "6": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceReason}",
+                "element": "DocumentLevelAllowanceReason",
+                "attributes": {
+                    "type": "EN16931_Text.Type",
+                    "usage": "O",
+                    "description": "The reason for the document level allowance, expressed as text."
+                }
+            }
+        },
+        "7": {
+            "PARENT": "0",
+            "DATA": {
+                "text": "{DocumentLevelAllowanceReasonCode}",
+                "element": "DocumentLevelAllowanceReasonCode",
+                "attributes": {
+                    "type": "EN16931_Code.Type",
+                    "usage": "O",
+                    "description": "The reason for the document level allowance, expressed as a code."
+                }
+            }
+        }
+    }
+}
